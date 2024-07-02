@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +24,28 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //Insert a string at the start of another string
             string myCombinedString = myStringAsInt + myString;
             Console.WriteLine(myCombinedString);
+            int answer = 1;
 
+            //Main task
+            string[] binaryNum = { "", "", "", "", "", "", "", "", "" };
+            int denaryNum = 210;
+
+            int i = 0;
+            while (answer > -1)
+            {
+                answer = (denaryNum / 2);
+                int remainder = denaryNum % 2;
+                string stringRemainder = Convert.ToString(remainder);
+                binaryNum[i] = Convert.ToString(remainder);
+                i = i+2
+            }
+            Console.WriteLine(binaryNum);
+            Console.ReadLine();
         }
 
     }
-} //watch me cast from string to int
+}
+//} //watch me cast from string to int
 
 //            //MAIN:  NUMBER CONVERSION PROGRAM
            
@@ -38,10 +56,10 @@ namespace Y9_DEC_TO_BIN_SKELETON
 //        //static void means the function will not return a value so it does not need a data type 
 //        //...this function DOES return a value so the method must have a data type
 //        static string numberConversion(int number, int numberbase)
-//        {
-//            //CODE GOES HERE
+//{
+//    //CODE GOES HERE
 
-//            return result; //REMOVE THE RED LINE!
-//        }
+//    return result; //REMOVE THE RED LINE!
+//}
 //    }
 //}
