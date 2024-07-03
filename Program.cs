@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,8 @@ namespace Y9_DEC_TO_BIN_SKELETON
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
+
             //STARTER: Practice using breakpoints and the watch window (F8 to single-step, F11 to start in single step mode)
             int myInt = 0; //just for testing single stepping
             string myString = "12"; //watch me being cast from string to int
@@ -19,7 +21,6 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //Convert integer to string
             string myIntAsString = Convert.ToString(myInt);
             Console.WriteLine(myIntAsString);
-            Console.ReadLine();
 
             //Insert a string at the start of another string
             string myCombinedString = myStringAsInt + myString;
@@ -27,20 +28,23 @@ namespace Y9_DEC_TO_BIN_SKELETON
             int answer = 1;
 
             //Main task
-            string[] binaryNum = { "", "", "", "", "", "", "", "", "" };
-            int denaryNum = 210;
+            Console.WriteLine("Enter number");
+            int userNum = Convert.ToInt32(Console.ReadLine());
+            int remainder = userNum % 2;
 
-            int i = 0;
-            while (answer > -1)
+            int (i = 0)
+            while (i = 0) ;
             {
-                answer = (denaryNum / 2);
-                int remainder = denaryNum % 2;
-                string stringRemainder = Convert.ToString(remainder);
-                binaryNum[i] = Convert.ToString(remainder);
-                i = i+2
+                Console.WriteLine(remainder);
             }
-            Console.WriteLine(binaryNum);
-            Console.ReadLine();
+            Console.WriteLine(remainder);
+            //string stringRemainder = Convert.ToString(remainder);
+            //string userStringNum = Convert.ToString(userNum);
+            ////userStringNum[i] = Convert.ToString(remainder);
+            //i = i + 1;
+
+            //Console.WriteLine(binaryNum);
+            //Console.ReadLine();
         }
 
     }
