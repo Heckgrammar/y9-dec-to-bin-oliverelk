@@ -34,7 +34,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine("Enter number");
             int userNum = Convert.ToInt32(Console.ReadLine());
             int remainder = userNum % 2;
-
+              
             int i = 0;
             string remainderstring = Convert.ToString(remainder);
             string[] fullBin = { remainderstring, remainderstring, remainderstring, remainderstring, remainderstring };
